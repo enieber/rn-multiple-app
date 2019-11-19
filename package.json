@@ -1,0 +1,37 @@
+{
+  "name": "multiploApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "android-demo:debug": "cd android  && ./gradlew  clean assembleDemoDebug && adb install app/build/outputs/apk/demo/debug/app-demo-debug.apk && cd .. || cd ..",
+    "android-demo:release": "cd android  && ./gradlew  clean assembleDemoRelease && adb install app/build/outputs/apk/demo/release/app-demo-release.apk && cd .. || cd ..",
+    "android-winter:debug": "cd android  && ./gradlew  clean assembleWinterDebug && adb install app/build/outputs/apk/winter/debug/app-winter-debug.apk && cd .. || cd ..",
+    "android-winter:release": "cd android  && ./gradlew  clean assembleWinterRelease && adb install app/build/outputs/apk/winter/release/app-winter-release.apk && cd .. || cd ..",
+    "android-regular:debug": "cd android  && ./gradlew  clean assembleRegularDebug && adb install app/build/outputs/apk/regular/debug/app-regular-debug.apk && cd .. || cd ..",
+    "android-regular:release": "cd android  && ./gradlew  clean assembleRegularRelease && adb install app/build/outputs/apk/regular/release/app-regular-release.apk && cd .. || cd ..",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "aws-amplify": "^1.2.4",
+    "aws-amplify-react-native": "^2.2.3",
+    "react": "16.9.0",
+    "react-native": "0.61.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.56.0",
+    "react-test-renderer": "16.9.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
